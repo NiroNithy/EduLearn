@@ -1,0 +1,83 @@
+*{
+   
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+.html{
+    height: 50px;
+    width: 50px;
+}
+.css{
+    height: 50px;
+    width: 50px;
+}
+.js{
+    height: 50px;
+    width: 50px;
+}
+.java{
+    height: 50px;
+    width: 50px;
+}
+.table-container{
+    padding: 0 10%;
+   margin: 100px 100px;
+}
+.heading{
+    font-size: 40px;
+    text-align: center;
+    color:rgb(17, 17, 135);
+    margin-bottom: 40px;
+}
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.table thead{
+    background-color: cornflowerblue;
+}
+.table thead tr th{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.35px;
+    color: black;
+    opacity: 1;
+    padding: 12px;
+    vertical-align: top;
+    border: 1px solid rgb(185, 185, 246);
+}
+.table tbody tr td{
+    font-size: 15px;
+    letter-spacing: 0.35px;
+    font-weight: normal;
+    color:black;
+    text-align: center;
+    border: 1px solid rgb(185, 185, 246);
+}
+.table tbody tr:nth-child(even){
+    background-color:rgb(177, 176, 176);
+}
+.table tbody tr td .btn{
+    width:130px;
+    line-height: 35px;
+    display: inline-block;
+    background-color: blue;
+    color:aliceblue;
+    box-shadow: 2px 2px 2px rgb(90, 161, 223);
+    border-radius: 10px;
+}
+@media(max-width:768px){
+    .table thead{
+        display: none;
+    }
+    .table,.table tbody,.table tr,.table td{
+        display: block;
+        width: 100%;
+    }
+    .table tr{
+        margin-bottom: 15px;
+    }
+  
+}

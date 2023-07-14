@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn</title>
+    <link rel="stylesheet" href="css_style.css">
+    <link rel="stylesheet" href="sign_style.css">
+</head>
+<body>
+    <script src="script.js"></script>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+           click
+        </label>
+        <label class="navigation">EduLearn</label>
+        <ul>
+         <li><a class="home" href="index.html">Home</a></li>
+         <li><a class="aboutus" href="index.html">About US</a></li>
+         <li><a class="courses" href="course.html">Courses</a></li>
+         <li><a class="SignIn" href="signIn.html">SignIn</a></li>
+         <li><a class="SignUp" href="signUp.html">SignUp</a></li>
+        </ul>
+    </nav>
+    <div class="regform">
+        <h3>Sign In</h3>
+        <div class="mainform">
+        <form action="#" name="myform" onsubmit="return validationForm()" method="post">
+       
+         <div class="input">
+             <label class="textlabel" for="email">Email</label>
+             <input type="text" name="email" id="email">
+        </div>
+         <div class="input">
+             <label class="textlabel" for="pwd">Password</label>
+             <input type="password" name="pwd" id="pwd">
+        </div>
+       
+        <div class="btn">
+            <button type="submit">Sign In</button>
+        </div>
+        </form>
+        </div>
+        </div>
+</body>
+</html>

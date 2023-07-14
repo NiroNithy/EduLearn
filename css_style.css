@@ -1,0 +1,219 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("home.png");
+    background-size: cover;
+}
+
+nav{
+    background-color: rgb(13, 93, 241);
+    height: 80px;
+    width:100%;
+}
+label.navigation{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+a:hover{
+   background:rgb(4, 4, 154); 
+   transition: .4s;
+}
+.checkbtn{
+    font-size: 20px;
+    color:white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media(max-width:952px){
+    label.navigation{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media(max-width:858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position:fixed;
+        width:100%;
+        height: 100vh;
+        background: #2c3e50;
+        top:80px;
+        left:-100%;
+        transition: all .5s;
+        text-align: center;
+    }
+    nav ul li{
+        display: block;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+    padding: 250px 200px 100px 250px;
+}
+.tagline1{
+    color:rgb(8, 42, 144);
+    font-size: 40px;
+    font-weight: bolder;
+    padding-top:300px;
+}
+.tagline2{
+    color:deepskyblue;
+    font-size: 30px;
+    animation-name: welcome;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 3;
+}
+.main div{
+    margin-top: 1em;
+}
+@media(max-width:400px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        height: 50vh;
+        padding: 0px 100px 100px 100px;
+    }
+    .tagline1{
+        color:plum;
+        font-size: 20px;
+        font-weight: bolder;
+        padding-top: 50px;
+    }
+    .main div{
+        margin-top: 0em;
+    }
+}
+@keyframes welcome{
+    50%{
+        color:rgb(42, 184, 219);
+        font-size: 15px;
+    }
+    100%{
+        color:rgb(16, 4, 84);
+        font-size:30px;
+    }
+}
+
+
+.main button {
+    width: 200px;
+    margin-top: 2em;
+    border-radius: 20px;
+    padding: .5em;
+    color: aliceblue;
+    background-color: blue;
+    border: 1px solid white;
+    font-size: 20px;
+    box-shadow: 5px 5px 5px rgb(90, 161, 223);
+}
+.sign{
+   color: aliceblue;
+}
+.sign:hover{
+    background-color: rgb(8, 134, 92);
+}
+.main button:hover{
+    background-color: rgb(8, 134, 92);
+    transform: scale(1.2) translateY(10px);
+}
+footer{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    padding: 5px;
+    background-color:rgb(13, 93, 241);
+    color:white;
+    position: fixed;
+    bottom: 0;
+    left:0;
+    width: 100%;
+}
+section{
+    padding: 50px 15%;
+    margin-top: 200px;
+}
+.about{
+    margin-left: 100px;
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    grid-gap:2rem;
+    align-items:center;
+}
+.about a{
+    width: 200px;
+    margin-top: 10px;
+    border-radius: 15px;
+    display: inline-block;
+    padding: 10px 20px;
+    color: aliceblue;
+    background-color: blue;
+    border: 1px solid white;
+    font-size: 15px;
+    text-align: center;
+    box-shadow: 5px 5px 5px rgb(90, 161, 223);
+}
+.about-text span{
+    color: rgb(8, 42, 144);
+    font-size:15px;
+    font-weight: bold;
+}
+.about-text p{
+    font-size: 17px;
+}
+.about-img{
+   max-width: 100%;
+   display: flex;
+   justify-content: flex-end;
+   margin-left: 100px;
+   flex-wrap: wrap;
+}
+
+
+
+   

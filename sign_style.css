@@ -1,0 +1,64 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url('https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700403781.jpg');
+}
+.regform{
+    font-size: 25px;
+    width: 500px;
+    margin: 100px auto;
+    padding: 10px 20px 30px;
+    border-radius: 15px;
+    
+    
+}
+.regform h3{
+    background-color: cornflowerblue;
+    color:black;
+    text-align: center;
+    border-radius: 15px;
+    padding: 5px 10px 10px;
+}
+.mainform{
+    background-color: aliceblue;
+    border-radius: 15px;
+}
+
+
+.input input{
+    width:420px;
+    font-size: 1em;
+    border:1px solid darkblue;
+    box-shadow: 5px 5px 5px rgba(16, 47, 160,.5);
+    border-radius: 8px;
+    padding: 5px 10px;
+    margin: 5px 10px 15px;
+   
+}
+ .textlabel{
+    padding: 20px 10px;
+    margin: 20px 10px 15px;
+    font-size: 25px;
+    color: darkblue;
+}
+input:focus{
+    background-color:rgb(150, 209, 243)
+}
+
+.btn{
+    text-align: center;
+}
+button{
+    background-color: rgb(44, 44, 172);
+    font-size: 25px;
+    color: aliceblue;
+    margin-top: 10px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid white;
+    box-shadow: 5px 5px 5px rgba(16, 47, 160,.5);
+    
+}
+.radio input{
+    accent-color:  rgb(44, 44, 172);
+    transform: scale(1.5);
+}
